@@ -1,0 +1,7 @@
+{
+  "name": "presentation-in-search-of-the-holy-grail",
+  "version": "0.0.0",
+  "dependencies": {
+    "prism": "gh-pages"
+  }
+}
