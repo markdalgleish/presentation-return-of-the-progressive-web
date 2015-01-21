@@ -23,8 +23,6 @@ bespoke.from('article', [
 
 // Generate mermaid diagrams for '.mermaid' elements
 // https://github.com/knsv/mermaid
-require('d3');
-require('dagre-d3');
 require('mermaid');
 
 // Prism syntax highlighting

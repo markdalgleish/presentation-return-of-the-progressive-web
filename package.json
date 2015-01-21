@@ -12,8 +12,6 @@
     "bespoke-scale": "^1.0.0",
     "bespoke-theme-nebula": "^1.0.1",
     "bespoke-touch": "^1.0.0",
-    "d3": "^3.5.3",
-    "dagre-d3": "^0.4.2",
     "debowerify": "^0.7.1",
     "gh-pages": "^0.2.0",
     "gulp": "^3.8.1",
@@ -29,7 +27,7 @@
     "gulp-uglify": "^0.3.1",
     "gulp-util": "^2.2.17",
     "insert-css": "^0.2.0",
-    "mermaid": "^0.3.2",
+    "mermaid": "git://github.com/knsv/mermaid#d0428d492be95ba23e499c8016347dc7bc47e341",
     "opn": "^0.1.2",
     "through": "^2.3.4"
   },
