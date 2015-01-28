@@ -3,7 +3,7 @@ html
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    title In Search of the Holy Grail
+    title The Return of the Progressive Web
 
     link(rel='stylesheet', type='text/css', href='build/build.css')
 
@@ -12,13 +12,321 @@ html
     article
 
       section
-        h2 In Search of the<br><br>Holy Grail
+        h2 The Return
+        h3 &mdash; of the &mdash;
+        h2 Progressive Web
+
+      section(data-bespoke-backdrop='computer')
+        h2 HTTP 0.9
+        h3 &mdash; circ. 1991 &mdash;
 
       section
-        .mermaid.
+        pre.mermaid.
           graph TD;
             web[http://example.com];
-            html[HTML];
+            html[HTML Content];
             web-->html;
+            html-- Link -->web;
+
+      section
+        pre.language-markup
+          code.
+            &lt;html&gt;
+            &lt;head&gt;&lt;title&gt;My Site&lt;/title&gt;&lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt;Welcome!&lt;/h1&gt;
+              &lt;p&gt;etc...&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+
+      section
+        h2 Fundamentally<br><br>accessible
+
+      section(data-bespoke-backdrop='robot')
+        h2 Rise
+        h3 &mdash; of the &mdash;
+        h2 Googlebot
+
+      section
+        pre.mermaid.
+          graph TD;
+            a[Super Important Page];
+            b[Page];
+            c[Page];
+            d[Page];
+            e[Page];
+            f[Page];
+            g[Page];
+            a-- Link -->b;
+            b-- Link -->a;
+            c-- Link -->a;
+            d-- Link -->c;
+            d-- Link -->a;
+            e-- Link -->a;
+            f-- Link -->a;
+            g-- Link -->a;
+
+      section
+        h2 Good SEO
+        h3 &mdash; starts with &mdash;
+        h2 Crawlable content
+
+      section(data-bespoke-backdrop='netscape')
+        h2(style='margin-top: 300px') JavaScript
+        h3 &mdash; circ. 1995 &mdash;
+
+      section
+        pre.mermaid.
+          graph TD;
+            web[http://example.com];
+            html[HTML Content];
+            js[JavaScript];
+            web-->html;
+            html-- Link/Form -->web;
+            html-->js;
+            js-- "DHTML" -->html;
+
+      section
+        h2.single-words 10% Front-End UI Code
+
+      section
+        img(style='width:200px', src='images/jquery.png', alt='jQuery')
+        h2 <span style="text-transform:none">j</span>Query
+
+      section
+        ul
+          li Server renders HTML
+          li Styles applied via CSS
+          li Rich interactivity via JavaScript
+
+      section
+        h2 Progressive<br><br>Enhancement
+        h3 &mdash; circ. 2003 &mdash;
+
+      section(data-bespoke-backdrop='stevechampeon')
+        h3(style='width:70%') &ldquo;&hellip;all the way up from &ldquo;baseline&rdquo;, to &ldquo;legacy&rdquo;, to &ldquo;midrange&rdquo;, to &ldquo;modern&rdquo; and beyond.&rdquo;
+        h4 Steve Champeon
+
+      section(data-bespoke-backdrop='lukew')
+        h3(style='width:50%') &ldquo;Build in layers, from HTML to CSS to Javascript. This creates a less fragile and more foolproof Web page&rdquo;
+        h4 Luke Wroblewski
+
+      section(data-bespoke-backdrop='bradf')
+        h3(style='width:60%') &ldquo;Progressive enhancement becomes an important strategy in order to deal with today and tomorrow&rsquo;s diverse landscape.&rdquo;
+        h4 Brad Frost
+
+      section(data-bespoke-backdrop='aarong')
+        h3 &ldquo;Fundamentally, progressive<br>enhancement is about accessibility&rdquo;
+        h4 Aaron Gustafson
+
+      section
+        h2 Building with
+        h3 &mdash; the web&rsquo;s &mdash;
+        h2 Foundational elements
+
+      section
+        ul
+          li Semantic HTML
+          li Links and forms
+          li Standard form elements
+
+      section
+        h2 Accessible
+
+      section
+        h2 Crawlable
+
+      section
+        ul
+          li Google
+          li Amazon
+          li Wikipedia
+          li IMDB
+
+      section
+        h3 Until&hellip;
+
+      section
+        h2 The Ajax Revolution
+        h3 &mdash; circ. 2005 &mdash;
+
+      section
+        pre.mermaid.
+          graph TD;
+            web[http://example.com];
+            api[http://api.example.com];
+            html[HTML Content];
+            js[JavaScript];
+            web-->html;
+            html-- Link/Form -->web;
+            html-->js;
+            js-- AJAX -->api;
+            api-->js;
+            js-- "DHTML" -->html;
+
+      section
+        h2.single-words(style="margin-bottom:-5px") Rise
+        h3 &mdash; of the &mdash;
+        h2.single-words Single Page App
+
+      section
+        pre.mermaid.
+          graph TD;
+            web[http://example.com];
+            api[http://api.example.com];
+            js[JavaScript];
+            web-- HTML Transport -->js;
+            js-- AJAX -->api;
+            api-->js;
+
+      section
+        h2.single-words 100% Front-End UI Code
+
+      section
+        img(style='width:20%', src='images/angularjs.png', alt='AngularJS')
+        br
+        h2 AngularJS
+
+      section
+        h2 The tradeoff?
+
+      section
+        pre.language-markup
+          code.
+            &lt;html&gt;
+            &lt;head&gt;&lt;title&gt;My Site&lt;/title&gt;&lt;/head&gt;
+            &lt;body&gt;
+              &lt;script src="my-awesome-app.js"&gt;&lt;/script&gt;
+            &lt;/body&gt;
+
+      section
+        .iphone
+        h3 Your single page app without JavaScript
+
+      section
+        h3(style='width:80%') &ldquo;Make sure your web design adheres to the principles of progressive enhancement as this helps our systems (and a wider range of browsers) see usable content and basic functionality&rdquo;
+        h4 Google Webmaster Central
+
+      section
+        h3 &mdash; When should we use &mdash;
+        h2 progressive<br><br>enhancement?
+
+      section
+        ul
+          li SEO is a priority
+          li Accessibility is a priority
+          li Your site is content-driven &amp; publicly available
+          li Your site is an &ldquo;essential service&rdquo;, i.e. <a href="http://www.abc.net.au/news/2014-11-05/blind-woman-launches-court-action-against-coles-over-its-website/5869874">Coles Online</a>
+
+      section
+        h3 &mdash; Why should we &mdash;
+        h2 Create single<br><br>page apps?
+
+      section
+        ul
+          li Richer, more app-like experience
+          li Fluid transitions between multiple states
+          li Singular, cohesive UI codebase
+          li Easier to build, test and reason about
+          li Can be packaged into an app, e.g. PhoneGap
+
+      section
+        h2 Make a choice&hellip;
+        h3 Progressive enhancement or rich, app-like experience?
+
+      section
+        h2 Meanwhile&hellip;
+
+      section
+        img(style='width:30%', src='images/nodejs.png', alt='Node.js')
+        h2 Node.js
+
+      section
+        img(style='width:50%', src='images/browserify.png', alt='Browserify')
+
+      section
+        h3 &mdash; The promise of &mdash;
+        h2 Isomorphic JavaScript
+
+      section
+        h2.single-words 100% Isomorphic UI Code
+
+      section
+        img(style='width:20%', src='images/react.png', alt='React')
+        br
+        h2 React
+
+      section
+        pre.language-javascript
+          code.
+            // Client
+            React.render(&lt;Component /&gt;, document.body);
+
+            // Server
+            React.renderToString(&lt;Component /&gt;);
+
+      section
+        pre.mermaid.
+          graph TB;
+            web[http://example.com];
+            api[http://api.example.com];
+            html[HTML Content];
+            js[React Code];
+            web-- I. Runs -->js;
+            js-- II. Request -->api;
+            api-- III. Response -->js;
+            js-- IV. Renders --> html;
+            html-- V. Runs --> js;
+        h3.caption Fig. I &mdash; With Client JavaScript
+
+      section
+        pre.language-markup
+          code.
+            &lt;html&gt;
+            &lt;head&gt;&lt;title&gt;My Site&lt;/title&gt;&lt;/head&gt;
+            &lt;body&gt;
+              &lt;h1&gt;Welcome!&lt;/h1&gt;
+              &lt;p&gt;etc...&lt;/p&gt;
+              &lt;script src="my-awesome-app.js"&gt;&lt;/script&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+
+      section
+        pre.mermaid.
+          graph TB;
+            web[http://example.com];
+            html[HTML Content];
+            web-- I. Runs React code -->html;
+            html-- II. Link/Form --> web;
+        h3.caption Fig. II &mdash; Without Client JavaScript
+
+      section
+        ul
+          li Progressively enhanced
+          li Gracefully degrades to web 1.0
+          li Inherently crawlable
+          li More accessible by default
+
+      section
+        h2 Where are we now?
+        h3 A brief survey of progressive enhancement&hellip;
+
+      section
+        h1 Holy grail
+
+      section
+        h2 Making a choice&hellip;
+        h3 Between progressive enhancement or a rich, app-like experience?
+
+      section
+        img(src='images/whynotboth.gif', alt="Why don't we have both?")
+
+      section
+        h2 The future
+        h3 &mdash; belongs to &mdash;
+        h2 Rich, progressive apps
+
+      section
+        h3 &mdash; Thank you! &mdash;
 
     script(src='build/build.js')

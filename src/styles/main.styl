@@ -7,16 +7,107 @@
 @import 'prism/themes/prism-okaidia.css'
 // Check out "bower_components/prism/themes/" for available themes
 
+$backgroundColor = #111
+$textColor = #000
+$boxColor = #fff
+$arrowColor = #fff
+
 svg
-  color: black
+  color: $textColor
   font-family: didot
 
   .node
-    fill: white !important
+    fill: $boxColor !important
     stroke: none !important
 
   path
-    stroke: white !important
+    stroke: $arrowColor !important
 
-  #arrowhead7 path
-    fill: white !important
+  [id^=arrowhead] path
+    fill: $arrowColor !important
+
+  .label span
+    background: $backgroundColor !important
+    color: white !important
+    font-size: .6em
+    padding: .5em .6em 1.5em
+
+li
+  font-family: didot
+  font-style: italic
+
+.large
+  zoom: 1.4
+
+.caption
+  font-size: .8em
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
+  padding: 0
+
+.iphone
+  width: 150px
+  height: 260px
+  background: #fff
+  border: 16px solid #444
+  border-width: 32px 16px
+  border-radius: 16px
+  margin-bottom: 24px
+
+.computer
+  background-image: url('../images/90scomputer.gif')
+  background-size: 50%
+  background-position: 54% 70%
+  background-repeat: no-repeat
+  transform: none !important
+
+.robot
+  background-image: url('../images/robot.gif')
+  transform: none !important
+
+.netscape
+  background-image: url('../images/netscape.gif')
+  background-size: 25%
+  background-position: 50% 30%
+  background-repeat: no-repeat
+  transform: none !important
+  transition-duration: .5s
+  transition-delay: 0s !important
+  &.bespoke-backdrop-active
+    opacity: 1 !important
+
+.whynotboth
+  background-image: url('../images/whynotboth.gif')
+  background-position: 0 70%
+  transform-origin: 50% 40%
+  transform: none !important
+  &.bespoke-backdrop-active
+    opacity: 1
+
+.stevechampeon
+  background-image: url('../images/stevechampeon.jpg')
+  transform-origin: 50% 40%
+  &.bespoke-backdrop-active
+    opacity: 0.4
+
+.lukew
+  background-image: url('../images/lukew.jpg')
+  transform-origin: 70% 50%
+  &.bespoke-backdrop-active
+    opacity: 0.4
+
+.bradf
+  background-image: url('../images/bradf.png')
+  background-position: 50% 0
+  transform-origin: 50% 70%
+  &.bespoke-backdrop-active
+    opacity: 0.4
+
+.aarong
+  background-image: url('../images/aarong.jpg')
+  background-position: 0% 100%
+  transform-origin: 20% 50%
+  &.bespoke-backdrop-active
+    opacity: 0.4

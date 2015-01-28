@@ -1,4 +1,4 @@
-# In Search of the Holy Grail
+# The Return of the Progressive Web
 > A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
 
 ## View slides locally
