@@ -251,6 +251,11 @@ html
           a(href='http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/') Isomorphic JavaScript
 
       section
+        img(style='width:30%; margin-bottom: 12px', src='images/rendr.png', alt='Rendr')
+        h3 &amp;
+        img(style='width:15%', src='images/backbone.png', alt='Backbone')
+
+      section
         h2.single-words 100% Isomorphic UI Code
 
       section
@@ -261,11 +266,30 @@ html
       section
         pre.language-javascript
           code.
-            // Client
-            React.render(&lt;Component /&gt;, document.body);
-
             // Server
             React.renderToString(&lt;Component /&gt;);
+
+      section
+        pre.language-markup
+          code.
+            &lt;div id="app"
+              data-reactid=".23qqlyvw6io"
+              data-react-checksum="509597258"&gt;
+
+              &lt;h1 data-reactid=".23qqlyvw6io.0" &gt;Welcome!&lt;/h1&gt;
+              &lt;p data-reactid=".23qqlyvw6io.1" &gt;etc...&lt;/p&gt;
+
+            &lt;/div&gt;
+            &lt;script src="my-awesome-app.js"&gt;&lt;/script&gt;
+
+      section
+        pre.language-javascript
+          code.
+            // Client
+            React.render(&lt;Component /&gt;, element);
+
+            // Your server rendered code
+            // is now a single page app!
 
       section
         pre.mermaid.
@@ -280,19 +304,6 @@ html
             js-- IV. Renders --> html;
             html-- V. Runs --> js;
         h3.caption Fig. I &mdash; With Client JavaScript
-
-      section
-        pre.language-markup
-          code.
-            &lt;div id="app"
-              data-reactid=".23qqlyvw6io"
-              data-react-checksum="509597258"&gt;
-
-              &lt;h1 data-reactid=".23qqlyvw6io.0" &gt;Welcome!&lt;/h1&gt;
-              &lt;p data-reactid=".23qqlyvw6io.1" &gt;etc...&lt;/p&gt;
-
-            &lt;/div&gt;
-            &lt;script src="my-awesome-app.js"&gt;&lt;/script&gt;
 
       section
         pre.mermaid.
@@ -311,14 +322,56 @@ html
           li More accessible by default
 
       section
+        h3 Ryan Florence&rsquo;s
+        h2
+          a(href='https://github.com/rackt/react-router-mega-demo') react-router-mega-demo
+
+      section
+        ul
+          li
+            a(href='https://github.com/steida/este') Este.js
+          li
+            a(href='https://github.com/irvinebroque/isomorphic-hot-loader') isomorphic-hot-loader
+          li
+            a(href='https://github.com/gpbl/isomorphic-react-template') isomorphic-react-template
+
+      section
         h1 Holy grail
+
+      section
+        h2 Beyond React&hellip;
+
+      section(data-bespoke-backdrop='virtual-dom')
+        h2
+          a(href='https://github.com/Matt-Esch/virtual-dom') virtual-dom
+
+      section(data-bespoke-backdrop='glimmer')
+        h3 Ember&rsquo;s
+        h2
+          a(href='https://github.com/emberjs/ember.js/pull/10501') Glimmer
+        h3 &amp;
+        h2
+          a(href='http://emberjs.com/blog/2014/12/22/inside-fastboot-the-road-to-server-side-rendering.html') FastBoot
+
+      section
+        h3(style='width: 500px') &ldquo; The next great monolithic web framework will involve JS single page apps rendered on client and server &rdquo;
+        a(href='https://twitter.com/markdalgleish/status/375032213194018818')
+          h4 Me, September 2013
+
+      section
+        h2 In closing&hellip;
 
       section
         h2 Making a choice&hellip;
         h3 Between progressive enhancement or a rich, app-like experience?
 
       section
-        img(src='images/whynotboth.gif', alt="Why don't we have both?")
+        img(style='height: 80%; border: 1vh solid white; border-radius: 1vh', src='images/whynotboth.gif', alt="Why don't we have both?")
+
+      section
+        h3 &mdash; &ldquo;Front end developer&rdquo;? &mdash;
+        br
+        h2 You should be<br><br>looking at this<br><br>right now
 
       section
         h2 The future
@@ -326,6 +379,8 @@ html
         h2 Rich, progressive apps
 
       section
-        h3 &mdash; Thank you! &mdash;
+        img.avatar(src='images/profile.jpg')
+        h3
+          a(href='https://twitter.com/markdalgleish') @markdalgleish
 
     script(src='build/build.js')
