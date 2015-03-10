@@ -242,6 +242,9 @@
         <h3>&mdash; The promise of &mdash;</h3>
         <h2><a href="http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/">Isomorphic JavaScript</a></h2>
       </section>
+      <section><img style="width:30%; margin-bottom: 12px" src="images/rendr.png" alt="Rendr">
+        <h3>&amp;</h3><img style="width:15%" src="images/backbone.png" alt="Backbone">
+      </section>
       <section>
         <h2 class="single-words">100% Isomorphic UI Code</h2>
       </section>
@@ -249,11 +252,28 @@
         <h2>React</h2>
       </section>
       <section>
-        <pre class="language-javascript"><code>// Client
-React.render(&lt;Component /&gt;, document.body);
-
-// Server
+        <pre class="language-javascript"><code>// Server
 React.renderToString(&lt;Component /&gt;);
+</code></pre>
+      </section>
+      <section>
+        <pre class="language-markup"><code>&lt;div id="app"
+  data-reactid=".23qqlyvw6io"
+  data-react-checksum="509597258"&gt;
+  
+  &lt;h1 data-reactid=".23qqlyvw6io.0" &gt;Welcome!&lt;/h1&gt;
+  &lt;p data-reactid=".23qqlyvw6io.1" &gt;etc...&lt;/p&gt;
+  
+&lt;/div&gt;
+&lt;script src="my-awesome-app.js"&gt;&lt;/script&gt;
+</code></pre>
+      </section>
+      <section>
+        <pre class="language-javascript"><code>// Client
+React.render(&lt;Component /&gt;, element);
+
+// Your server rendered code
+// is now a single page app!
 </code></pre>
       </section>
       <section>
@@ -268,17 +288,6 @@ React.renderToString(&lt;Component /&gt;);
   js-- IV. Renders --> html;
   html-- V. Runs --> js;</pre>
         <h3 class="caption">Fig. I &mdash; With Client JavaScript</h3>
-      </section>
-      <section>
-        <pre class="language-markup"><code>&lt;html&gt;
-&lt;head&gt;&lt;title&gt;My Site&lt;/title&gt;&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1&gt;Welcome!&lt;/h1&gt;
-  &lt;p&gt;etc...&lt;/p&gt;
-  &lt;script src="my-awesome-app.js"&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
       </section>
       <section>
         <pre class="mermaid">graph TB;
@@ -297,24 +306,54 @@ React.renderToString(&lt;Component /&gt;);
         </ul>
       </section>
       <section>
-        <h2>Where are we now?</h2>
-        <h3>A brief survey of progressive enhancement&hellip;</h3>
+        <h3>Ryan Florence&rsquo;s</h3>
+        <h2><a href="https://github.com/rackt/react-router-mega-demo">react-router-mega-demo</a></h2>
+      </section>
+      <section>
+        <ul>
+          <li><a href="https://github.com/steida/este">Este.js</a></li>
+          <li><a href="https://github.com/irvinebroque/isomorphic-hot-loader">isomorphic-hot-loader</a></li>
+          <li><a href="https://github.com/gpbl/isomorphic-react-template">isomorphic-react-template</a></li>
+        </ul>
       </section>
       <section>
         <h1>Holy grail</h1>
       </section>
       <section>
+        <h2>Beyond React&hellip;</h2>
+      </section>
+      <section data-bespoke-backdrop="virtual-dom">
+        <h2><a href="https://github.com/Matt-Esch/virtual-dom">virtual-dom</a></h2>
+      </section>
+      <section data-bespoke-backdrop="glimmer">
+        <h3>Ember&rsquo;s</h3>
+        <h2><a href="https://github.com/emberjs/ember.js/pull/10501">Glimmer</a></h2>
+        <h3>&amp;</h3>
+        <h2><a href="http://emberjs.com/blog/2014/12/22/inside-fastboot-the-road-to-server-side-rendering.html">FastBoot</a></h2>
+      </section>
+      <section>
+        <h3 style="width: 500px">&ldquo; The next great monolithic web framework will involve JS single page apps rendered on client and server &rdquo;</h3><a href="https://twitter.com/markdalgleish/status/375032213194018818">
+          <h4>Me, September 2013</h4></a>
+      </section>
+      <section>
+        <h2>In closing&hellip;</h2>
+      </section>
+      <section>
         <h2>Making a choice&hellip;</h2>
         <h3>Between progressive enhancement or a rich, app-like experience?</h3>
       </section>
-      <section><img src="images/whynotboth.gif" alt="Why don't we have both?"></section>
+      <section><img style="height: 80%; border: 1vh solid white; border-radius: 1vh" src="images/whynotboth.gif" alt="Why don't we have both?"></section>
+      <section>
+        <h3>&mdash; &ldquo;Front end developer&rdquo;? &mdash;</h3><br>
+        <h2>You should be<br><br>looking at this<br><br>right now</h2>
+      </section>
       <section>
         <h2>The future</h2>
         <h3>&mdash; belongs to &mdash;</h3>
         <h2>Rich, progressive apps</h2>
       </section>
-      <section>
-        <h3>&mdash; Thank you! &mdash;</h3>
+      <section><img src="images/profile.jpg" class="avatar">
+        <h3><a href="https://twitter.com/markdalgleish">@markdalgleish</a></h3>
       </section>
     </article>
     <script src="build/build.js"></script>
