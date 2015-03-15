@@ -123,3 +123,23 @@ a h4
   transform-origin: 20% 50%
   &.bespoke-backdrop-active
     opacity: 0.4
+
+.jakea
+  background-image: url('../images/jakea.jpg')
+  background-position: 0 50%
+  transform-origin: 40% 40%
+  &.bespoke-backdrop-active
+    opacity: 0.4
+
+.loading
+  background-image: url('../images/loading-spin.svg')
+  background-size: 200px
+  background-position: 0 50%
+  transform-origin: 50% 50%
+  transform: scale(3)
+  &.bespoke-backdrop-active
+    opacity: 0.1
+    transition-duration: 10s
+  &.bespoke-backdrop-active,
+  &.bespoke-backdrop-before
+    transform: scale(1)

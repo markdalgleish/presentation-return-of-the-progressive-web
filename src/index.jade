@@ -40,9 +40,6 @@ html
             &lt;/body&gt;
             &lt;/html&gt;
 
-      section
-        h2 Fundamentally<br><br>accessible
-
       section(data-bespoke-backdrop='robot')
         h2 Rise
         h3 &mdash; of the &mdash;
@@ -132,17 +129,9 @@ html
           li Standard form elements
 
       section
-        h2 Accessible
-
-      section
+        h2 &nbsp;Accessible,<br><br>Curlable
+        h3 &mdash; &amp; &mdash;
         h2 Crawlable
-
-      section
-        ul
-          li Google
-          li Amazon
-          li Wikipedia
-          li IMDB
 
       section
         h3 Until&hellip;
@@ -209,11 +198,27 @@ html
         h4 Google Webmaster Central
 
       section
+        h3 &ldquo;We don&rsquo;t have any non-JavaScript users&rdquo;?
+
+      section(data-bespoke-backdrop='jakea')
+        h3 &ldquo;All your users are non-JS<br>while they&rsquo;re downloading your JS&rdquo;
+        h4 Jake Archibald, Google
+
+      section(data-bespoke-backdrop='loading')
+        h2 Resilience
+        h3 &mdash; for the &mdash;
+        h2 real world
+
+      section
+        h3 If you haven&rsquo;t tested your design<br>on a spotty 3G connection,<br>you haven&rsquo;t tested your design
+
+      section
         h3 &mdash; When should we use &mdash;
         h2 progressive<br><br>enhancement?
 
       section
         ul
+          li Initial page load speed is critical
           li SEO is a priority
           li Accessibility is a priority
           li Your site is content-driven &amp; publicly available
@@ -225,7 +230,8 @@ html
 
       section
         ul
-          li Richer, more app-like experience
+          li Long-lived applications
+          li Richer, more app-like experiences
           li Fluid transitions between multiple states
           li Singular, cohesive UI codebase
           li Easier to build, test and reason about
@@ -327,15 +333,6 @@ html
           a(href='https://github.com/rackt/react-router-mega-demo') react-router-mega-demo
 
       section
-        ul
-          li
-            a(href='https://github.com/steida/este') Este.js
-          li
-            a(href='https://github.com/irvinebroque/isomorphic-hot-loader') isomorphic-hot-loader
-          li
-            a(href='https://github.com/gpbl/isomorphic-react-template') isomorphic-react-template
-
-      section
         h1 Holy grail
 
       section
@@ -354,11 +351,6 @@ html
           a(href='http://emberjs.com/blog/2014/12/22/inside-fastboot-the-road-to-server-side-rendering.html') FastBoot
 
       section
-        h3(style='width: 500px') &ldquo; The next great monolithic web framework will involve JS single page apps rendered on client and server &rdquo;
-        a(href='https://twitter.com/markdalgleish/status/375032213194018818')
-          h4 Me, September 2013
-
-      section
         h2 In closing&hellip;
 
       section
@@ -367,6 +359,11 @@ html
 
       section
         img(style='height: 80%; border: 1vh solid white; border-radius: 1vh', src='images/whynotboth.gif', alt="Why don't we have both?")
+
+      section
+        h3 &mdash; &ldquo;UX specialist&rdquo;? &mdash;
+        br
+        h2 Progressive<br><br>Enhancement is all<br><br>about the user
 
       section
         h3 &mdash; &ldquo;Front end developer&rdquo;? &mdash;
@@ -382,5 +379,17 @@ html
         img.avatar(src='images/profile.jpg')
         h3
           a(href='https://twitter.com/markdalgleish') @markdalgleish
+
+      section
+        h3.bullet Looking to get started with progressive React?
+        ul
+          li
+            a(href='https://github.com/rackt/react-router-mega-demo') react-router-mega-demo
+          li
+            a(href='https://github.com/steida/este') Este.js
+          li
+            a(href='https://github.com/irvinebroque/isomorphic-hot-loader') isomorphic-hot-loader
+          li
+            a(href='https://github.com/gpbl/isomorphic-react-template') isomorphic-react-template
 
     script(src='build/build.js')
